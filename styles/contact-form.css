@@ -1,0 +1,65 @@
+#snackbarForm {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #ffc744;
+  border: #000;
+  border-style: solid;
+  color: #000;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbarForm.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  z-index: 1000;
+}
+
+#contactForm {
+  width: 50vw;
+}
+#contactForm input,
+textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+#contactForm label {
+  color: #fff;
+  display: block;
+  margin: 30px 0 3px 0;
+}
+
+.field-error {
+  display: none;
+  color: #ffc744;
+}
+
+#formError {
+  text-transform: uppercase;
+  color: #ffc744;
+}
+
+.formButton {
+  background-color: #ffc744 !important;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 12px;
+}
+
+.formButton:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.send-button {
+  text-align: center;
+}
